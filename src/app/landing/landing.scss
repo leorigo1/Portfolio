@@ -53,10 +53,6 @@ header {
   align-items: center;
 }
 
-.name .rigo {
-  font-size: 44px;
-  color: #FFFFFF;
-}
 
 .logo span,
 .logo p,
@@ -102,10 +98,6 @@ header {
     }
 }
 
-.fullStack {
-    color: #FF3B3B;
-    font-size: 48px;
-}
 
 .text-begin {
     justify-items: start;
@@ -113,17 +105,10 @@ header {
 
     h1{
       margin: 0;
-  padding: 0;
-  line-height: 1;
+      padding: 0;
+      line-height: 1;
     }
 }
-
-.text-personal{
-    color: #FFFFFF;
-    font-weight: bold;   
-    font-size: 48px;
-}
-
 
 .tech-strip {
   width: 100%;
@@ -170,4 +155,40 @@ header {
   }
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 200px;
+    align-items: center;
+
+    img {
+        width: 350px;
+        height: 350px; 
+        border-radius: 200px;
+    }
+
+    .text-about {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    .interative{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+        padding-top: 30px;
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 24px;
+        } 
+    }
+}
 
