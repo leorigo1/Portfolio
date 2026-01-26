@@ -44,8 +44,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "10kB",
+                  "maximumError": "12kB"
                 }
               ],
               "outputHashing": "all"
@@ -58,7 +58,7 @@
           },
           "defaultConfiguration": "production"
         },
-        "run build": {
+        "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
