@@ -81,7 +81,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 135px;
 
     .interative{
     display: flex;
@@ -115,10 +115,59 @@ header {
       margin: 0;
   padding: 0;
   line-height: 1;
+    }
 }
-}
+
 .text-personal{
     color: #FFFFFF;
     font-weight: bold;   
     font-size: 48px;
 }
+
+
+.tech-strip {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  padding: 20px 0;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  gap: 50px;
+  animation: scroll-left 15s linear infinite;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  color: #ff3b3b;
+  font-size: 22px;
+  font-weight: bold;
+
+  i {
+    font-size: 26px;
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
