@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #2B2B2B;
+
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 850px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+
+.interative{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+
+    a {
+    color: #FFFFFF;
+    text-decoration: none;
+    }   
+}
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  align-items: center;
+}
+
+.name .rigo {
+  font-size: 44px;
+  color: #FFFFFF;
+}
+
+.logo span,
+.logo p,
+.logo h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 15px;
+  letter-spacing: 0.7px;
+}
+
+.dev {
+  color: #FF3B3B;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.first-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+    .interative{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding-top: 30px;
+    
+    a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    }   
+}
+    img {
+    width: 770px;
+    height: auto; 
+    }
+}
+
+.fullStack {
+    color: #FF3B3B;
+    font-size: 48px;
+}
+
+.text-begin {
+    justify-items: start;
+    height: 350px;
+
+    h1{
+      margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+}
+.text-personal{
+    color: #FFFFFF;
+    font-weight: bold;   
+    font-size: 48px;
+}
