@@ -396,8 +396,6 @@ footer{
       }
 
     }
-
-
   }
 
   .techs{
@@ -414,6 +412,47 @@ footer{
   }
   }
 }
+
+.profile-wrapper {
+  position: relative;
+}
+
+.img-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Ícone flutuante */
+.tech-float {
+  position: absolute;
+  top: 10px;        /* fica em cima */
+  left: 25px;      /* sai um pouco pra esquerda */
+  font-size: 50px;
+  color: #007acc;
+  z-index: 2;
+
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Animação de subir e descer */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
 
 /* MOBILE */
 @media (max-width: 768px) {
