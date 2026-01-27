@@ -20,19 +20,29 @@ header {
   justify-content: center;
   align-items: center;
 
-.interative{
+  .head-size {
     display: flex;
     flex-direction: row;
     gap: 40px;
     align-items: center;
 
     a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: 
+      transform 0.25s ease,
+      color 0.25s ease;
+    }
+    a:hover{
+      transform: scale(1.08);
+      color: #FF3B3B;
     }   
+  }
 }
-}
+
+
 
 .logo {
   display: flex;
@@ -312,3 +322,37 @@ footer{
 }
 
 }
+
+/*  ANIMAÇÃO INTERATIVE */
+
+.interative-item {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+}
+
+.interative-item span {
+  transition: 
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.interative-item i {
+  transition: 
+    transform 0.45s cubic-bezier(.4,0,.2,1),
+    font-size 0.3s ease;
+}
+
+/* 🎯 Hover */
+.interative-item:hover span {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+.interative-item:hover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.3) translate(4px, -4px);
+}
+
