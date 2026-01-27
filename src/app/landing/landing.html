@@ -199,44 +199,36 @@ estou sempre em busca de aprendizado contínuo e evolução profissional.</p>
 <section class="projects">
   <h1 style="color: #FFFFFF;">Projetos Desenvolvidos</h1>
 
-  <div class="cards-list">
-    <div class="card">
-      <img src="eu.jpeg" alt="" style="width: 220px; height: 220px;">
-      <h3 style="color: #6B6B6B;">Allbum</h3>
-      <p style="color: #FFFFFF; max-width: 220px;">Software interativo de armazenamento de imagens usando geolocalização em tempo real</p>
-      <div class="techs">
-        <i class="fa-brands fa-angular"></i>
-        <i class="fa-brands fa-node-js"></i>
-        <i class="devicon-sqlite-plain"></i>
-        <i class="devicon-css3-plain"></i>
-    </div>
+<div class="cards-list">
+
+  <div 
+    class="card"
+    *ngFor="let project of projects"
+    (click)="openProject(project)"
+  >
+
+  <img [src]="project.image[0]" style="width: 300px; height: 300px;">
+
+    <div class="desc-text">
+      <h3 style="color: #6B6B6B;">{{ project.title }}</h3>
+      <p style="color: #FFFFFF; max-width: 220px;">
+        {{ project.description }}
+      </p>
     </div>
 
-    <div class="card">
-      <img src="eu.jpeg" alt="" style="width: 220px; height: 220px;">
-      <h3 style="color: #6B6B6B;">Allbum</h3>
-      <p style="color: #FFFFFF; max-width: 220px;">Software interativo de armazenamento de imagens usando geolocalização em tempo real</p>
-      <div class="techs">
-        <i class="fa-brands fa-angular"></i>
-        <i class="fa-brands fa-node-js"></i>
-        <i class="devicon-sqlite-plain"></i>
-        <i class="devicon-css3-plain"></i>
-    </div>
-    </div>
-
-        <div class="card">
-      <img src="eu.jpeg" style="width: 300px; height: 300px;">
-      <h3 style="color: #6B6B6B;">Allbum</h3>
-      <p style="color: #FFFFFF; max-width: 300px;">Software interativo de armazenamento de imagens usando geolocalização em tempo real</p>
-      <div class="techs">
-        <i class="fa-brands fa-angular"></i>
-        <i class="fa-brands fa-node-js"></i>
-        <i class="devicon-sqlite-plain"></i>
-        <i class="devicon-css3-plain"></i>
-    </div>
-    </div>
+<div class="techs">
+  <i *ngFor="let tech of project.techs" [class]="tech"></i>
+</div>
 
   </div>
+</div>
+
+<!-- MODAL -->
+<app-modal
+  [project]="selectedProject"
+  [isOpen]="modalOpen"
+  (close)="closeModal()">
+</app-modal>
 
 </section>
 
@@ -245,6 +237,5 @@ estou sempre em busca de aprendizado contínuo e evolução profissional.</p>
     <h4>Developed by: Leonardo Rigo</h4>
     <p>All rights reserved ©</p>
 </footer>
-
 
 </body>

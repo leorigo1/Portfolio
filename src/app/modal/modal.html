@@ -1,0 +1,28 @@
+<div class="overlay" *ngIf="isOpen" (click)="onClose()">
+
+  <div class="modal" (click)="$event.stopPropagation()">
+
+    <button class="close-btn" (click)="onClose()">×</button>
+
+    <h2>{{ project?.title }}</h2>
+
+<div class="images">
+  <img 
+    *ngFor="let image of project?.image" 
+    [src]="image"
+    class="modal-image"
+  />
+</div>
+
+    <p>{{ project?.description }}</p>
+
+<div class="techs">
+  <i *ngFor="let tech of project?.techs"[class]="tech"></i>
+</div>
+
+<div style="background-color: aqua; width: 50px; height: 50px; cursor: pointer;">
+    <i *ngIf="let github of project.github" [class]="github" class="devicon-github-original"></i>
+</div>
+
+  </div>
+</div>
