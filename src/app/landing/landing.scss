@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
   background-color: #2B2B2B;
 
-  font-family: "Archivo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
@@ -29,6 +29,7 @@ header {
     a {
     color: #FFFFFF;
     text-decoration: none;
+    font-weight: bold;
     }   
 }
 }
@@ -148,7 +149,7 @@ header {
 
 @keyframes scroll-left {
   from {
-    transform: translateX(150%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(-100%);
@@ -192,3 +193,122 @@ header {
     }
 }
 
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  position: relative;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 160px;
+  bottom: 0;
+  width: 3px;
+  background-color: #FF3B3B;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: #FF3B3B;
+  border-radius: 50%;
+  position: relative;
+  left: 13px;
+  margin-top: 5px;
+}
+
+.content {
+  max-width: 700px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #FF3B3B;
+}
+
+.content h3 {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.download-item{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 150px;
+  height: 20px;
+  margin-top: 12px;
+}
+
+.interative-item{
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  font-size: 27px;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 150px;
+  height: 20px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+
+  i{
+    font-size: 36px;
+    color: #FF3B3B;
+  }
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  align-items: center;
+  color: #FF3B3B;
+  gap: 0px;
+
+  p{
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  h4 {
+    color: #FF3B3B;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+}
