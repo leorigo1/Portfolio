@@ -23,12 +23,12 @@
         e sou Desenvolvedor</h1> <h1 style="color: #FF3B3B; font-size: 48px;"> FullStack</h1>
         <div class="interative">
 
-        <div class="interative-item">
+        <div class="interative-item" (click)="redirect('https://www.linkedin.com/in/leonardo-rigo-2a7021361/')">
             <span>Linkedin</span>
             <i class="ph ph-arrow-up-right"></i>
         </div>
         
-        <div class="interative-item">
+        <div class="interative-item" (click)="redirect('https://github.com/leorigo1')">
             <span>GitHub</span>
             <i class="ph ph-arrow-up-right"></i>
         </div>
@@ -140,11 +140,11 @@ Apaixonado por tecnologia, arquitetura de sistemas e soluções eficientes,
 estou sempre em busca de aprendizado contínuo e evolução profissional.</p>
 
     <div class="interative">
-        <div class="interative-item">
+        <div class="interative-item" (click)="redirect('https://www.linkedin.com/in/leonardo-rigo-2a7021361/')">
             <span>Linkedin</span>
             <i class="ph ph-arrow-up-right"></i>
         </div>
-        <div class="interative-item">
+        <div class="interative-item" (click)="redirect('https://github.com/leorigo1')">
             <span>GitHub</span>
             <i class="ph ph-arrow-up-right"></i>
         </div>
@@ -207,7 +207,7 @@ estou sempre em busca de aprendizado contínuo e evolução profissional.</p>
     (click)="openProject(project)"
   >
 
-  <img [src]="project.image[0]" style="width: 300px; height: 300px;">
+  <img [src]="project.image" style="width: 300px; height: 300px;">
 
     <div class="desc-text">
       <h3 style="color: #6B6B6B;">{{ project.title }}</h3>

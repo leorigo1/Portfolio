@@ -1,27 +1,22 @@
 <div class="overlay" *ngIf="isOpen" (click)="onClose()">
 
   <div class="modal" (click)="$event.stopPropagation()">
-
     <button class="close-btn" (click)="onClose()">×</button>
-
     <h2>{{ project?.title }}</h2>
 
 <div class="images">
-  <img 
-    *ngFor="let image of project?.image" 
-    [src]="image"
-    class="modal-image"
-  />
+  <img *ngFor="let image of project?.image_detailed" [src]="image"class="modal-image"/>
 </div>
 
-    <p>{{ project?.description }}</p>
+    <p>{{ project?.description_detailed }}</p>
 
-<div class="techs">
-  <i *ngFor="let tech of project?.techs"[class]="tech"></i>
+<div class="techs" style="justify-content: end;">
+  <i *ngFor="let tech of project?.techs_detailed"[class]="tech" style="font-size: 25px;"></i>
 </div>
 
-<div style="background-color: aqua; width: 50px; height: 50px; cursor: pointer;">
-    <i *ngIf="let github of project.github" [class]="github" class="devicon-github-original"></i>
+<div class="project-github" (click)="redirect('https://github.com/leorigo1/projetoIntegrador')">
+    <span style="padding-right: 6px;">Ver Projeto</span>
+    <i class="devicon-github-original"></i>
 </div>
 
   </div>

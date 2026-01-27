@@ -21,5 +21,8 @@ export class ProjectModalComponent {
       this.close.emit();
     }
 
+  redirect(url: string) {
+    window.open(url,'_blank')
+  }
 
 }
