@@ -76,3 +76,94 @@
       border-color: #FF3B3B;
     }  
 }
+
+@media (max-width: 768px) {
+
+  .modal {
+    width: 95%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .close-btn {
+    right: 12px;
+    top: 10px;
+    font-size: 28px;
+  }
+
+  .modal-image {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .techs {
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .techs span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .project-github {
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .overlay {
+    padding: 10px; /* evita colar nas bordas */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+// DEFINE A COR DE CADA ÍCONE DENTRO DO MODAL
+
+.devicon-sqlite-plain {
+  color: #003B57;
+}
+
+.devicon-angularjs-plain {
+  color: #DD0031;
+}
+
+.devicon-javascript-plain {
+  color: #F7DF1E;
+}
+
+.devicon-typescript-plain {
+  color: #3178C6;
+}
+
+.devicon-sass-original {
+  color: #CC6699;
+}
+
+.devicon-firebase-plain {
+  color: #FFCA28;
+}
+
+.devicon-mongodb-plain {
+  color: #47A248;
+}
+
+.devicon-html5-plain{
+  color: rgb(255, 139, 74);
+}
+
+.devicon-nodejs-plain {
+  color: #2e7d32;
+}

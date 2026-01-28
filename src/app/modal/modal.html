@@ -11,7 +11,7 @@
     <p>{{ project?.description_detailed }}</p>
 
 <div class="techs" style="justify-content: end;">
-  <i *ngFor="let tech of project?.techs_detailed"[class]="tech" style="font-size: 25px;"></i>
+  <i *ngFor="let tech of project?.techs_detailed" [class]="tech" style="font-size: 25px;"></i>
 </div>
 
 <div class="project-github" (click)="redirect('https://github.com/leorigo1/projetoIntegrador')">
