@@ -226,9 +226,40 @@
 </section>
 
 
-<footer>
-    <h4>Developed by: Leonardo Rigo</h4>
-    <p>All rights reserved ©</p>
+<footer class="terminal-footer">
+  <div class="terminal">
+
+    <div class="line">
+      <span class="prompt">leonardo@portfolio:~$</span>
+      <span class="command"> whoami</span>
+    </div>
+
+    <div class="output">
+      Leonardo Rigo — Desenvolvedor FullStack | Suporte Tec.
+    </div>
+
+    <div class="line">
+      <span class="prompt">leonardo@portfolio:~$</span>
+      <span class="command"> stack</span>
+    </div>
+
+    <div class="output">
+      <span *ngFor="let tech of techs_detailed; let last = last">
+        {{ tech.label }}<span *ngIf="!last"> | </span>
+      </span>
+    </div>
+
+    <div class="line">
+      <span class="prompt">leonardo@portfolio:~$</span>
+      <span class="cursor">█</span>
+    </div>
+
+  </div>
+  <div class="info-foot" style="display: flex; flex-direction: row; gap: 5px;">
+  <p style="color: #FFFFFF;">Developed by:</p>
+  <p style="color: #FF3B3B;"><strong>Leonardo Rigo</strong></p>
+  </div>
+    <p style="color: #7D7D7D;">All rights reserved ©</p>
 </footer>
 
 </body>

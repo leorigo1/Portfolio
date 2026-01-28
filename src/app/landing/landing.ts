@@ -35,7 +35,7 @@ export class Landing {
       description_detailed:'O ChamadoPRO é um sistema de gerenciamento de chamados desenvolvido com foco em organização, usabilidade e controle de solicitações técnicas. O projeto foi pensado para simular um ambiente real de suporte, permitindo o registro, acompanhamento e gerenciamento de chamados de forma prática e eficiente. A aplicação conta com funcionalidades como criação de chamados, definição de prioridades, categorias, forma de contato, além do acompanhamento do status e da data de criação. O sistema foi estruturado para facilitar tanto o uso por usuários finais quanto a organização por parte do suporte técnico. No desenvolvimento, foram aplicados conceitos de arquitetura bem definida, separação de responsabilidades e boas práticas de desenvolvimento, visando um código limpo, escalável e de fácil manutenção. O projeto também explora a integração entre front-end e back-end, simulando fluxos comuns de sistemas corporativos.',
       techs: [ 'devicon-sqlite-plain', 'devicon-angularjs-plain', 'devicon-nodejs-plain' ],
       techs_detailed: [ 'devicon-sqlite-plain', 'devicon-angularjs-plain', 'devicon-nodejs-plain' ],
-            github_link: 'https://github.com/leorigo1/Calling-System'
+            github_link: 'https://github.com/leorigo1/calling-system'
     },
 
     {
@@ -49,6 +49,16 @@ export class Landing {
       github_link: 'https://github.com/leorigo1/Portfolio'
     }
   ];
+
+techs_detailed = [
+  { icon: 'devicon-angularjs-plain', label: 'Angular' },
+  { icon: 'devicon-nodejs-plain', label: 'Node.js' },
+  { icon: 'devicon-aws-plain', label: 'Spring Boot' },
+  { icon: 'devicon-linux-plain', label: 'Sqlite' },
+  { icon: 'devicon-git-plain', label: 'Typescript' }
+];
+
+
 
   openProject(project: Project) {
     this.selectedProject = project;

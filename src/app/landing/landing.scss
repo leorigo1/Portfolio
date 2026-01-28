@@ -319,32 +319,57 @@ header {
   }
 }
 
-
-footer{
+.terminal-footer {
+  background: #020617;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
   align-items: center;
-  color: #FF3B3B;
-  gap: 0px;
-  border-top: solid 3px #5a5a5a;
-
-  p{
-    color: #FFFFFF;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    margin-bottom: 50px;
-  }
-  h4 {
-    color: #FF3B3B;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    margin-bottom: 10px;
+  justify-content: center;
 }
 
+.terminal {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 14px;
+  padding: 32px;
+  font-family: 'Fira Code', monospace;
+  color: #e5e7eb;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #DD0031;
+  margin-right: 6px;
+}
+
+.command {
+  color: #e5e7eb;
+}
+
+.output {
+  margin-left: 18px;
+  margin-bottom: 18px;
+  opacity: 0.9;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
 
 /*  ANIMAÇÃO INTERATIVE */
 .interative-item {
