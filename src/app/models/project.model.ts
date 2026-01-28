@@ -6,4 +6,5 @@ export interface Project {
   description_detailed: string;
   techs: string[];
   techs_detailed: string[];
+  github_link: string;
 }
